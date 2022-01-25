@@ -10,7 +10,7 @@ var c5 = document.getElementById("5_");
 var c6 = document.getElementById("6_");
 
 grid = [c1.innerText, c2.innerText, c3.innerText, c4.innerText, c5.innerText, c6.innerText]
-alert(grid)
+//alert(grid)
 
 // Switch
 function SWI(m,z){
