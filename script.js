@@ -1,3 +1,6 @@
+// Vars
+var move = 1;
+
 var line = document.getElementById("line");
 var c1 = document.getElementById("1_");
 var c2 = document.getElementById("2_");
@@ -38,18 +41,30 @@ function SWI(m,z){
 		z[4] = d
 		z[5] = c
   }
+
+  return z;
 }
 
 // Re Assign
-function REA(g,z){
-  for(let i = 0; i < g.length;i++){
-    g[i] = z[i]
-  }
+function REA(g){
+  c1.innerHTML = g[0];
+  c2.innerHTML = g[1];
+  c3.innerHTML = g[2];
+  c4.innerHTML = g[3];
+  c5.innerHTML = g[4];
+  c6.innerHTML = g[5];
 }
 
 // Recieve
 function RE(inp){
   switch(inp){
-    
+    case 'L':
+      if(move > 0) move -= 1;
+      break;
+    case 'R':
+      if(move < 4) move += 1;
+    case 'switch':
+      
+      REA(SWI(move,grid))
   }
 }
