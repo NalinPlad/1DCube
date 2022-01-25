@@ -1,0 +1,27 @@
+.cell-row{
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+
+.cell{
+  display: inline-block;
+  padding:5%;
+  border-radius: 5px;
+  font-size: 150%;
+  background: rgb(135, 111, 243)
+}
+
+.btn-row{
+  display: flex;
+  justify-content: center;
+  padding:0px 50px 0px 50px;
+}
+
+.switch-move{
+  background: rgb(100, 69, 240);
+  cursor: pointer;
+  display: inline-block;
+  padding: 2.5%;
+  border-radius: 5px;
+}
